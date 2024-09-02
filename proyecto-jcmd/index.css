@@ -54,6 +54,11 @@
     margin-bottom: 20px;
 }
 
+.carousel-inner img {
+    max-height: 730px; /* Ajusta la altura máxima aquí */
+    object-fit: cover; /* Hace que la imagen cubra el contenedor sin distorsionarse */
+}
+
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 767.98px) {
     .btn-icon {
