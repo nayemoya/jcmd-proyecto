@@ -1,0 +1,112 @@
+/* Clase personalizada para ajustar el tamaño de la imagen en el botón */
+.btn-icon img {
+    max-width: 100%; /* Ajuste automático según el contenedor */
+    height: auto;
+}
+
+/* Ajustes para los botones de los modales */
+.btn-icon {
+    display: flex;
+    flex-direction: column; /* Asegura que el texto esté debajo de la imagen */
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    padding: 10px; /* Agrega espacio alrededor del contenido */
+    background-color: #cdd5dc; /* Color gris para el botón */
+    color: rgb(0, 0, 0); /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño del texto */
+    text-align: center; /* Centra el texto */
+    width: 100%; /* Hace que el botón abarque todo el ancho del contenedor */
+    margin-bottom: 20px; /* Espacio entre los botones */
+}
+
+/* Ajustes para las imágenes dentro de los botones */
+.btn-icon img {
+    margin-bottom: 5px; /* Espacio entre la imagen y el texto */
+}
+
+/* Cambia el color del botón activo a gris oscuro */
+.btn-primary.active, .btn-primary:active, .btn-primary:focus {
+    background-color: #333; /* Gris oscuro */
+    border-color: #333; /* Gris oscuro para el borde */
+}
+
+/* Cambia el color del botón en estado hover a gris oscuro */
+.btn-primary:hover {
+    background-color: #333; /* Gris oscuro */
+    border-color: #333; /* Gris oscuro para el borde */
+}
+
+/* Tamaño personalizado para el modal */
+.modal-dialog.custom-size {
+    max-width: 500%; /* Ajusta al porcentaje deseado del ancho de la pantalla */
+}
+
+/* Ajustar el ancho máximo del modal */
+.modal-content {
+    width: 100%; /* Asegura que el contenido del modal ocupe el ancho completo del contenedor */
+    max-width: 1000px; /* Ajusta el ancho máximo del modal */
+}
+
+/* Estilo para la barra de búsqueda */
+#searchInput {
+    margin-bottom: 20px;
+}
+
+.carousel-inner img {
+    max-height: 730px; /* Ajusta la altura máxima aquí */
+    object-fit: cover; /* Hace que la imagen cubra el contenedor sin distorsionarse */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 767.98px) {
+    .btn-icon {
+        padding: 20px; /* Aumenta el padding para hacer el botón más grande */
+        width: 100%; /* Asegura que el botón abarque el ancho completo */
+    }
+    .btn-icon img {
+        width: 100%; /* La imagen abarcará todo el ancho del botón */
+        max-width: 150px; /* Ajuste para mantener un tamaño apropiado */
+    }
+    .btn-icon span {
+        margin-top: 10px; /* Espacio entre la imagen y el texto */
+    }
+}
+
+/* Ajustes para pantallas medianas */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .btn-icon {
+        padding: 20px; /* Aumenta el padding para hacer el botón más grande */
+        width: 100%; /* Asegura que el botón abarque el ancho completo */
+    }
+    .btn-icon img {
+        width: 100%; /* La imagen abarcará todo el ancho del botón */
+        max-width: 200px; /* Ajuste para mantener un tamaño apropiado */
+    }
+    .btn-icon span {
+        margin-top: 10px; /* Espacio entre la imagen y el texto */
+    }
+}
+
+/* Ajustes para pantallas grandes (opcional, si se necesita) */
+@media (min-width: 992px) {
+    .btn-icon {
+        padding: 20px; /* Ajusta el padding si es necesario */
+        width: 100%; /* Asegura que el botón abarque el ancho completo */
+    }
+    .btn-icon img {
+        width: 100%; /* La imagen abarcará todo el ancho del botón */
+        max-width: 250px; /* Ajuste para mantener un tamaño apropiado */
+    }
+    .btn-icon span {
+        margin-top: 10px; /* Espacio entre la imagen y el texto */
+    }
+}
+
+/* Añadir margen entre botones en pantallas pequeñas y medianas */
+@media (max-width: 991.98px) {
+    .btn-icon {
+        margin-bottom: 20px; /* Espacio entre los botones */
+    }
+}
