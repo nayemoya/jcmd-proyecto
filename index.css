@@ -26,10 +26,14 @@
     margin-bottom: 5px; /* Espacio entre la imagen y el texto */
 }
 
+.btn-icon:hover, .btn-icon:focus {
+    color: wheat; /* Cambia el color del texto si lo deseas */
+}
+
 /* Cambia el color del botón activo a gris oscuro */
 .btn-primary.active, .btn-primary:active, .btn-primary:focus {
-    background-color: #333; /* Gris oscuro */
-    border-color: #333; /* Gris oscuro para el borde */
+    background-color: #636363; /* Gris oscuro */
+    border-color: #555454; /* Gris oscuro para el borde */
 }
 
 /* Cambia el color del botón en estado hover a gris oscuro */
@@ -54,10 +58,94 @@
     margin-bottom: 20px;
 }
 
-.carousel-inner img {
-    max-height: 730px; /* Ajusta la altura máxima aquí */
-    object-fit: cover; /* Hace que la imagen cubra el contenedor sin distorsionarse */
+/* Justificación del texto en el cuerpo del modal */
+.modal-body {
+    text-align: justify;
+    font-size: 18px; /* Ajusta el tamaño de la fuente aquí según sea necesario */
+    line-height: 1.8; /* Aumenta el espacio entre líneas para mejor legibilidad */
+    padding: 20px; /* Ajusta el padding si deseas más espacio alrededor del texto */
 }
+
+/* Centrar el modal en la pantalla */
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 1rem); /* Centrado vertical, con algo de margen superior e inferior */
+}
+
+/* Asegura que el modal ocupe un tamaño adecuado */
+.modal-lg {
+    max-width: 80%; /* Puedes ajustar este valor según lo necesites */
+}
+
+/* Ajustar el contenido del modal */
+.modal-content {
+    margin: 0;
+    width: 100%; /* Asegura que el contenido del modal se extienda al ancho permitido */
+    padding: 20px;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 730px; /* Altura fija del carrusel */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+}
+
+.carousel-item {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Asegura que el item ocupe el 100% de la altura del contenedor */
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover; /* Recorta la imagen para que cubra el contenedor */
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Evita que el texto se desborde */
+}
+
+.navbar-brand {
+    white-space: nowrap; /* Previene el salto de línea */
+    text-align: center;
+    overflow: hidden; /* Oculta el texto que no cabe */
+    text-overflow: ellipsis; /* Muestra puntos suspensivos si el texto es demasiado largo */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 767.98px) {
+    .navbar-brand {
+        display: block;
+        white-space: normal; /* Permite el salto de línea */
+    }
+}
+
+/* Ajusta el margen superior del carrusel en pantallas pequeñas */
+@media (max-width: 767.98px) {
+    #carouselExampleCaptions {
+        margin-top: 70px; /* Ajusta este valor según el tamaño de tu barra de navegación */
+    }
+}
+
+
+@media (max-width: 767.98px) {
+    .carousel-inner {
+        height: 290px; /* Ajusta la altura para pantallas más pequeñas si lo deseas */
+    }
+}
+
 
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 767.98px) {
@@ -108,5 +196,24 @@
 @media (max-width: 991.98px) {
     .btn-icon {
         margin-bottom: 20px; /* Espacio entre los botones */
+    }
+}
+
+@media (max-width: 768px) { /* Ajusta el valor según sea necesario */
+    .modal-dialog {
+        display: flex;
+        align-items: center; /* Centra verticalmente el modal */
+        justify-content: center; /* Centra horizontalmente el modal */
+        min-height: calc(100vh - 1rem); /* Ajusta el margen superior e inferior */
+    }
+
+    .modal-lg {
+        max-width: 90%; /* Ajusta el ancho máximo del modal si es necesario */
+        margin: 5%; /* Elimina el margen para centrarlo adecuadamente */
+    }
+
+    .modal-content {
+        width: 100%; /* Hace que el contenido ocupe todo el ancho del modal */
+        padding: 20px; /* Añade padding alrededor del contenido */
     }
 }

@@ -10,45 +10,43 @@
     <link href="index.css" rel="stylesheet">
 </head>
 
-<body>
+<body style="background-color: rgb(87, 87, 87);">
     <nav class="navbar fixed-top bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">LECCIONES APRENDIDAS Y BUENAS PRÁCTICAS EN EJECUCIÓN DE PROYECTOS</a>
+        <div class="container-fluid" style="background-color: rgb(87, 87, 87);">
+            <a class="navbar-brand" href="#">
+                <span class="navbar-text" style="color: antiquewhite;">LECCIONES APRENDIDAS Y BUENAS PRÁCTICAS EN</span>
+                <span class="navbar-text-responsive" style="color: rgb(159, 215, 219);">EJECUCIÓN DE PROYECTOS</span>
+            </a>
         </div>
     </nav>
+    
 
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
+                aria-current="true" aria-label="Slide 1" style="background-color: rgb(87, 87, 87);"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
+                aria-label="Slide 2" style="background-color: rgb(87, 87, 87);"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
+                aria-label="Slide 3" style="background-color: rgb(87, 87, 87);"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="assets\carrusel-1.jpg" class="d-block w-100"
                     alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="assets\carrusel-2.jpg" class="d-block w-100"
                     alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="assets\carrusel-3.jpg"
                     class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
                 </div>
             </div>
         </div>
@@ -64,6 +62,7 @@
         </button>
     </div>
     
+<div style="background-color: rgb(87, 87, 87);">
 
     <!-- Barra de búsqueda -->
     <div class="container mt-4">
@@ -74,12 +73,12 @@
     <div class="container mt-5">
         <div class="row">
             <!-- Primer Modal -->
-            <div class="col-md-4 modal-item" data-title="Modal 1">
+            <div class="col-md-4 modal-item" data-title="PLANTA EXTERNA Puntos de instalación de PMI">
                 <button type="button" class="btn btn-primary d-flex align-items-center btn-icon" data-bs-toggle="modal"
                     data-bs-target="#exampleModal1">
                     <img src="https://coworkingfy.com/wp-content/uploads/2019/11/trabajo-en-equipo-grupo-figurativo-de-equipo-de-trabajo.jpg"
                         alt="Icono" class="me-2">
-                    Launch modal 1
+                        <p>PLANTA EXTERNA</p><b>Definir puntos de instalación de PMI</b>
                 </button>
                 <!-- Modal 1 -->
                 <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1"
@@ -87,12 +86,13 @@
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel1">Modal 1</h5>
+                                <h5 class="modal-title" id="exampleModalLabel1">PUNTOS DE INSTALACIÓN DE PMI</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                Este es el contenido del primer modal...
+                                Para definir los puntos donde se instalaran los PMI se solicita realizar un recorrido con cliente y las dependencias correspondientes que puedan estar involucradas en el proceso de sembrado e instalación de postería.<br><br>
+                                Ejemplo: (alumbrado publico, agua potable, desarrollo urbano, patrimonio cultural, CFE, parques y jardines).    
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -103,25 +103,25 @@
             </div>
 
             <!-- Segundo Modal -->
-            <div class="col-md-4 modal-item" data-title="Modal 2">
+            <div class="col-md-4 modal-item" data-title="PLANTA EXTERNA Configuraciones de equipamiento para PMI">
                 <button type="button" class="btn btn-primary d-flex align-items-center btn-icon" data-bs-toggle="modal"
                     data-bs-target="#exampleModal2">
                     <img src="https://coworkingfy.com/wp-content/uploads/2019/11/trabajo-en-equipo-grupo-figurativo-de-equipo-de-trabajo.jpg"
                         alt="Icono" class="me-2">
-                    Launch modal 2
+                        <p>PLANTA EXTERNA</p><b>Configuraciones de equipamiento para PMI en sombra</b>
                 </button>
                 <!-- Modal 2 -->
                 <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
                     aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel2">Modal 2</h5>
+                                <h5 class="modal-title" id="exampleModalLabel2">CONFIGURACIONES DE EQUIPAMIENTO PARA PMI EN SOMBRA</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                Este es el contenido del segundo modal...
+                                Configuraciones de equipamiento para PMI en sombra se traduce a realizar la configuración de todo el equipamiento que compone un punto de monitoreo inteligente, con esto evitamos desgaste del personal en campo por clima y retrabajos en estar acudiendo por más de dos veces a configurar, de logra minimizar costos.
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -132,25 +132,25 @@
             </div>
 
             <!-- Tercer Modal -->
-            <div class="col-md-4 modal-item" data-title="Modal 3">
+            <div class="col-md-4 modal-item" data-title="PLANTA EXTERNA Configuraciones de equipamiento para arco carretero">
                 <button type="button" class="btn btn-primary d-flex align-items-center btn-icon" data-bs-toggle="modal"
                     data-bs-target="#exampleModal3">
                     <img src="https://coworkingfy.com/wp-content/uploads/2019/11/trabajo-en-equipo-grupo-figurativo-de-equipo-de-trabajo.jpg"
                         alt="Icono" class="me-2">
-                    Launch modal 3
+                        <p>PLANTA EXTERNA</p><b>Configuraciones de equipamiento para arco carretero</b>
                 </button>
                 <!-- Modal 3 -->
                 <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3"
                     aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel3">Modal 3</h5>
+                                <h5 class="modal-title" id="exampleModalLabel3">CONFIGURACIONES DE EQUIPAMIENTO PARA ARCO CARRETERO</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                Este es el contenido del tercer modal...
+                                Configuraciones de equipamiento para Arco carretero en sombra se traduce a realizar la configuración de todo el equipamiento que compone un arco carretero, con esto evitamos desgaste del personal en campo por clima y retrabajos en estar acudiendo por más de dos veces a configurar, se logra minimizar costos.
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -161,25 +161,25 @@
             </div>
 
             <!-- Cuarto Modal -->
-            <div class="col-md-4 modal-item" data-title="Modal 4">
+            <div class="col-md-4 modal-item" data-title="PLANTA EXTERNA Prueba de vestimenta en PMI">
                 <button type="button" class="btn btn-primary d-flex align-items-center btn-icon" data-bs-toggle="modal"
                     data-bs-target="#exampleModal4">
                     <img src="https://coworkingfy.com/wp-content/uploads/2019/11/trabajo-en-equipo-grupo-figurativo-de-equipo-de-trabajo.jpg"
                         alt="Icono" class="me-2">
-                    Launch modal 4
+                        <p>PLANTA EXTERNA</p><b>Prueba de vestimenta en PMI</b>
                 </button>
                 <!-- Modal 4 -->
                 <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4"
                     aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel4">Modal 4</h5>
+                                <h5 class="modal-title" id="exampleModalLabel4">PRUEBA DE VESTIMENTA EN PMI</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                Este es el contenido del cuarto modal...
+                                Realizar 1 prueba de vestimenta en PMI con toda la tecnología con la que se compone para determinar específicamente lo que requiere en cuanto a equipo y consumible, con esto evitamos desperdicio de consumible y revisamos el correcto funcionamiento de la tecnología.
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -200,7 +200,7 @@
                 <!-- Modal 5 -->
                 <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5"
                     aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalLabel5">Modal 5</h5>
@@ -229,7 +229,7 @@
                 <!-- Modal 6 -->
                 <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel6"
                     aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalLabel6">Modal 6</h5>
@@ -258,7 +258,7 @@
                 <!-- Modal 7 -->
                 <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel7"
                     aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalLabel7">Modal 7</h5>
@@ -287,7 +287,7 @@
                 <!-- Modal 8 -->
                 <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel8"
                     aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalLabel8">Modal 8</h5>
@@ -316,7 +316,7 @@
                 <!-- Modal 9 -->
                 <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel9"
                     aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalLabel9">Modal 9</h5>
@@ -335,6 +335,7 @@
             </div>
         </div>
     </div>
+</div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
