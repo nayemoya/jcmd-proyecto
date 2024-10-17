@@ -1,3 +1,13 @@
+/* Fuente general */
+body, h2, h5 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Fondo y contenedor */
+body {
+    background-color: #2C3E50;
+}
+
 /* Clase personalizada para ajustar el tamaño de la imagen en el botón */
 .btn-icon img {
     max-width: 100%; /* Ajuste automático según el contenedor */
